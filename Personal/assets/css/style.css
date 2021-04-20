@@ -969,7 +969,7 @@ section .container {
 .contact .php-email-form .error-message {
   display: none;
   background: rgba(255, 255, 255, 0.08);
-  background: #ed3c0d;
+  background: #6BB3BF;
   text-align: left;
   padding: 15px;
   font-weight: 600;
