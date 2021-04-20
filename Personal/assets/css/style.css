@@ -19,7 +19,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../img/bg1.jpg") no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../img/bg1.jpg") no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -226,6 +226,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9999;
   overflow-y: auto;
   background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(7px);
   transition: ease-in-out 0.2s;
   opacity: 0;
   visibility: hidden;
