@@ -149,7 +149,7 @@
 
           <div class="col-md-12 form-group">
 
-            <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="form-control" required style="background: rgba(255, 255, 255, 0.1); color: black;"></select>
+            <!-- <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="form-control" required style="background: rgba(255, 255, 255, 0.1); color: black;"></select> -->
 			
           </div>
 
@@ -220,13 +220,14 @@
             <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" />
             <div class="validate"></div>
           </div>
-          <div class="col-md-6 form-group">
+          <div class="col-md-12 form-group">
+          	  <script src="assets/js/cities.js"></script>
 
             <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="form-control" required style="background: rgba(255, 255, 255, 0.1); color: black;"></select>
 			
           </div>
 
-          <div class="col-md-6 form-group">
+          <div class="col-md-12 form-group">
           	
             
 			<select id ="state" class="form-control" required style="background: rgba(255, 255, 255, 0.1); color: black;">
