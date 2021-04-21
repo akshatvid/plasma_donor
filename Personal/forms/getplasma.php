@@ -19,7 +19,8 @@ if ($res)
     if (mysqli_num_rows($res)>0)
     {
         // echo "$st, $ci, $bl";
-        echo "<table border='2'> <thead> <th>NAME</th> <th>PHONE NUMBER</th> <th>AGE</th> <th>E-MAIL</th> <th>STATE</th> <th>CITY</th> <th>BLOOD GROUP</th> <th>RECOVERED</th> </thead>";
+        echo "  <link href='assets/css/style.css' rel='stylesheet'>        ";
+        echo "<div style='overflow-x: auto;'> <table border='2'> <thead> <th>NAME</th> <th>PHONE NUMBER</th> <th>AGE</th> <th>E-MAIL</th> <th>STATE</th> <th>CITY</th> <th>BLOOD GROUP</th> <th>RECOVERED</th> </thead>";
         while($row = mysqli_fetch_array($res)) 
         {
             // print_r($row);
@@ -34,12 +35,12 @@ if ($res)
             echo "<td>". $row['recovered']."</td>";
             echo "</tr>"; 
         }
-        echo "</table>";
+        echo "</table></div>";
     }
     else
     {
         echo "Required Type Not Found <br>";
-        echo "Don't Worry Apply For Requirement <div><button type='submit'>Apply</button></div>";
+        echo "Don't Worry Apply For Requirement";
     }
     
 }

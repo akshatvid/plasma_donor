@@ -34,6 +34,9 @@ body::before {
   }
 }
 
+
+
+
 /*@media (max-width: 676px) {
   body::before {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../img/bg3.jpg") top right no-repeat !important;
@@ -969,10 +972,14 @@ section .container {
 .contact .php-email-form .error-message {
   display: none;
   background: rgba(255, 255, 255, 0.08);
-  /*background: #6BB3BF88;*/
+  background: #6BB3BF88;
   text-align: left;
   padding: 15px;
   font-weight: 600;
+}
+
+.contact .php-email-form .error-message td {
+  padding: 5px !important;
 }
 
 .contact .php-email-form .error-message br + br {
