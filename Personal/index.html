@@ -326,7 +326,7 @@
 
 
 
-  <!-- ======= Contact Section ======= -->
+  <!-- ======= Volunteer Section ======= -->
   <section id="volunteer" class="contact">
     <div class="container">
 
@@ -425,7 +425,121 @@
       </form>
 
     </div>
+  </section><!-- End Volunteer Section -->
+
+
+  <!-- ======= Current Requirement Section ======= -->
+  <section id="currentreq" class="contact">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Current Requirement</h2>
+        <p>Check Requirement and Donate Plasma</p>
+        <p>Donors can directly contact the Patient's Attendant for donating their Plasma.</p>
+      </div>
+
+      
+
+      <form action="forms/currentreq.php" method="post" role="form" class="php-email-form mt-4 plasmafind">
+        <div class="form-row">
+          <!-- <div class="col-md-6 form-group">
+            <input type="text" name="pname" class="form-control" id="pname" placeholder="Patient Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+            <div class="validate"></div>
+          </div> -->
+          <!-- <div class="col-md-6 form-group">
+            <input type="text" name="aname" class="form-control" id="aname" placeholder="Attendant Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+            <div class="validate"></div>
+          </div> -->
+          <!-- <div class="col-md-6 form-group">
+            <input type="text" name="aphone" class="form-control" id="aphone" placeholder="Attendant Mobile Number" data-rule="minlen:10" data-msg="Please enter valid number" />
+            <div class="validate"></div>
+          </div> -->
+          <!-- <div class="col-md-6 form-group">
+            <input type="text" name="p_age" class="form-control" id="p_age" placeholder="Enter Patient's Age" data-rule="minlen:1" data-msg="Invalid Age" />
+            <div class="validate"></div>
+          </div> -->
+          <!-- <div class="col-md-6 form-group">
+            <input type="email" class="form-control" name="a_email" id="a_email" placeholder="Your Email" />
+            <div class="validate"></div>
+          </div> -->
+
+
+
+          <div class="col-md-6 form-group">
+            <input type="text" name="donor_state" class="form-control" id="state" placeholder="Enter Donor State" data-rule="minlen:3" data-msg="Please enter valid State" />
+            <div class="validate"></div>
+          </div>
+
+          <div class="col-md-6 form-group">
+            <input type="text" name="donor_city" class="form-control" id="city" placeholder="Enter Donor City" data-rule="minlen:4" data-msg="Please enter valid City" />
+            <div class="validate"></div>
+          </div>
+
+          <!-- <div class="col-md-6 form-group">
+            <input type="text" name="hospital" class="form-control" id="hospital" placeholder="Enter Hospital" data-rule="minlen:8" data-msg="Please enter more than 8 characters" />
+            <div class="validate"></div>
+          </div> -->
+
+          <div class="col-md-12 form-group">
+          	<!-- <label for="blood">Choose Blood Group:</label> -->
+
+			<select name="donor_blood" id="blood" class="form-control" style="background: rgba(255, 255, 255, 0.1); color: black;">
+			  <option value="" >Donor Blood Group</option>
+			  <option value="A+">A+</option>
+			  <option value="A-">A-</option>
+			  <option value="B+">B+</option>
+			  <option value="B-">B-</option>
+			  <option value="O+">O+</option>
+			  <option value="O-">O-</option>
+			  <option value="AB+">AB+</option>
+			  <option value="AB-">AB-</option>
+			</select>
+            
+          </div>
+
+
+
+
+
+
+          <!-- <div class="col-md-12 form-group">
+
+            <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="form-control" required style="background: rgba(255, 255, 255, 0.1); color: black;"></select>
+			
+          </div> -->
+
+          <!-- <div class="col-md-12 form-group">
+          	
+            
+			<select id ="state" class="form-control" required style="background: rgba(255, 255, 255, 0.1); color: black;">
+				<option>Select City</option>
+			</select>
+			<script language="javascript">print_state("sts");</script>
+
+
+          </div> -->
+
+          <!-- <div class="col-md-12 form-group">
+            <input type="text" name="hospital" class="form-control" id="hospital" placeholder="Hospital Address" data-rule="minlen:8" data-msg="Please Enter atleast 8 Characters" />
+            <div class="validate"></div>
+          </div> -->
+          
+          
+
+        </div>
+        
+        <div class="mb-3">
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <!-- <div class="sent-message">Your message has been sent. Thank you!</div> -->
+        </div>
+        <div class="text-center"><button type="submit">Show</button></div>
+      </form>
+
+    </div>
   </section><!-- End Contact Section -->
+
+
 
   <div class="credits">
     <!-- All the links in the footer should remain intact. -->
