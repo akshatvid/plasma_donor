@@ -4,6 +4,8 @@ if (!$con)
 {
     die("Error Connecting to DB".mysqli_connect_error());
 }
+
+date_default_timezone_set('Asia/Kolkata');
 $db=mysqli_select_db($con,"VOLUNTEER");
 $n = $_POST['name'];
 $p = $_POST['phone'];

@@ -139,7 +139,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   line-height: 1;
   margin-right: 8px;
-  /*border-radius: 20%;*/
+  border-radius: 8px;
   width: 160px;
   height: 60px;
   border: 1px solid #df4759;

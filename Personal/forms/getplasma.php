@@ -4,16 +4,17 @@ if (!$con)
 {
     die("Error Connecting to DB".mysqli_connect_error());
 }
+date_default_timezone_set('Asia/Kolkata');
 $db=mysqli_select_db($con,"VOLUNTEER");
 
 $st = $_POST['p_state'];
 $ci = $_POST['p_city'];
 $bl = $_POST['p_blood'];
 
-$sql = "SELECT * FROM Volunteer_Detail WHERE d_state='$st' and d_city='$ci' and blood_gp='$bl' ORDER BY date_up asc";
+$sql = "SELECT * FROM Volunteer_Detail WHERE d_state='$st' and d_city='$ci' and blood_gp='$bl' ORDER BY date_up desc";
 
 $res = mysqli_query($con, $sql);
-
+echo date("d-m-Y H:i:sa");
 if ($res)
 {
     if (mysqli_num_rows($res)>0)
