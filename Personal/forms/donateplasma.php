@@ -15,9 +15,11 @@ $b = $_POST['blood'];
 $r = $_POST['recovery'];
 
 $sql = "INSERT INTO Volunteer_Detail VALUES('$n', '$p', '$a', '$e', '$s', '$c', '$b', '$r')";
+
 $sql1 = "SELECT * FROM Volunteer_Detail WHERE phone_no='$p' AND full_name='$n'";
 $res = mysqli_query($con,$sql1);
 $row = mysqli_num_rows($res);
+
 if ($row >= 1)
 {
     echo "Details already exists";

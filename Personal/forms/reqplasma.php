@@ -18,12 +18,24 @@ $p_b = $_POST['p_blood'];
 
 $sql = "INSERT INTO plasma_req VALUES('$pn', '$an', '$ap', '$p_a', '$a_e', '$p_s', '$p_c', '$hos', '$p_b')";
 
-if (mysqli_query($con,$sql))
+$sql1 = "SELECT * FROM plasma_req WHERE a_phone='$ap' AND p_name='$pn'";
+$res = mysqli_query($con,$sql1);
+$row = mysqli_num_rows($res);
+
+if ($row >= 1)
 {
-    echo "Requirement Updated <br>";
+    echo "Requirement already exists";
 }
 else
 {
-    echo "Error". mysqli_error($con);
+    if (mysqli_query($con,$sql))
+    {
+        echo "Requirement Updated <br>";
+    }
+    else
+    {
+        echo "Error". mysqli_error($con);
+    }
 }
+
 mysqli_close($con);
