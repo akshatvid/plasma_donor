@@ -14,7 +14,7 @@ $bl = $_POST['p_blood'];
 $sql = "SELECT * FROM Volunteer_Detail WHERE d_state='$st' and d_city='$ci' and blood_gp='$bl' ORDER BY date_up desc";
 
 $res = mysqli_query($con, $sql);
-echo date("d-m-Y H:i:sa");
+// echo date("d-m-Y H:i:sa");
 if ($res)
 {
     if (mysqli_num_rows($res)>0)
