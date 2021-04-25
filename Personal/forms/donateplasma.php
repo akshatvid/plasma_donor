@@ -15,13 +15,23 @@ $b = $_POST['blood'];
 $r = $_POST['recovery'];
 
 $sql = "INSERT INTO Volunteer_Detail VALUES('$n', '$p', '$a', '$e', '$s', '$c', '$b', '$r')";
-
-if (mysqli_query($con,$sql))
+$sql1 = "SELECT * FROM Volunteer_Detail WHERE phone_no='$p' AND full_name='$n'";
+$res = mysqli_query($con,$sql1);
+$row = mysqli_num_rows($res);
+if ($row >= 1)
 {
-    echo "Database Updated <br>";
+    echo "Details already exists";
 }
 else
 {
-    echo "Error". mysqli_error($con);
+    if (mysqli_query($con,$sql))
+    {
+        echo "Database Updated <br>";
+    }
+    else
+    {
+        echo "Error". mysqli_error($con);
+    }
 }
+
 mysqli_close($con);
