@@ -10,7 +10,7 @@ $st = $_POST['p_state'];
 $ci = $_POST['p_city'];
 $bl = $_POST['p_blood'];
 
-$sql = "SELECT * FROM Volunteer_Detail WHERE d_state='$st' and d_city='$ci' and blood_gp='$bl'";
+$sql = "SELECT * FROM Volunteer_Detail WHERE d_state='$st' and d_city='$ci' and blood_gp='$bl' ORDER BY date_up asc";
 
 $res = mysqli_query($con, $sql);
 

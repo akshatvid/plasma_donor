@@ -10,8 +10,10 @@ $d_st = $_POST['donor_state'];
 $d_ci = $_POST['donor_city'];
 $d_bl = $_POST['donor_blood'];
 
-$sql = "SELECT * FROM plasma_req WHERE p_state='$d_st' and p_city='$d_ci' and p_blood='$d_bl'";
+// $sqln = "SELECT convert(varchar, date_up, 3) AS [DD/MM/YY]";
+$sql = "SELECT * FROM plasma_req WHERE p_state='$d_st' and p_city='$d_ci' and p_blood='$d_bl' ORDER BY date_up desc";
 
+// $re = mysqli_query($con, $sqln);
 $res = mysqli_query($con, $sql);
 
 if ($res)
