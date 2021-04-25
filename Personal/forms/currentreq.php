@@ -20,11 +20,12 @@ if ($res)
     {
         // echo "$st, $ci, $bl";
         // echo "  <link href='assets/css/style.css' rel='stylesheet'>        ";
-        echo "<div style='overflow-x: auto;'> <table border='2'> <thead> <th>PATIENT NAME</th> <th>ATTENDANT NAME</th> <th>ATTENDANT CONTACT</th> <th>PATIENT AGE</th> <th>ATTENDANT E-MAIL</th> <th>STATE</th> <th>CITY</th> <th>HOSPITAL</th> <th>BLOOD GROUP</th> </thead>";
+        echo "<div style='overflow-x: auto;'> <table border='2'> <thead> <th>DATE UPDATED</th> <th>PATIENT NAME</th> <th>ATTENDANT NAME</th> <th>ATTENDANT CONTACT</th> <th>PATIENT AGE</th> <th>ATTENDANT E-MAIL</th> <th>STATE</th> <th>CITY</th> <th>HOSPITAL</th> <th>BLOOD GROUP</th> </thead>";
         while($row = mysqli_fetch_array($res)) 
         {
             // print_r($row);
             echo "<tr>";
+            echo "<td>". $row['date_up']."</td>";
             echo "<td>". $row['p_name']."</td>";
             echo "<td>". $row['a_name']."</td>";
             echo "<td>". $row['a_phone']."</td>"; 

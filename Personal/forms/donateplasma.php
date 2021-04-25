@@ -13,8 +13,9 @@ $s = $_POST['state'];
 $c = $_POST['city'];
 $b = $_POST['blood'];
 $r = $_POST['recovery'];
+$d_up = date('Y-m-d');
 
-$sql = "INSERT INTO Volunteer_Detail VALUES('$n', '$p', '$a', '$e', '$s', '$c', '$b', '$r')";
+$sql = "INSERT INTO Volunteer_Detail VALUES('$d_up', '$n', '$p', '$a', '$e', '$s', '$c', '$b', '$r')";
 
 $sql1 = "SELECT * FROM Volunteer_Detail WHERE phone_no='$p' AND full_name='$n'";
 $res = mysqli_query($con,$sql1);

@@ -14,9 +14,10 @@ $p_s = $_POST['p_state'];
 $p_c = $_POST['p_city'];
 $hos = $_POST['hospital'];
 $p_b = $_POST['p_blood'];
+$d = date("Y-m-d");
 
 
-$sql = "INSERT INTO plasma_req VALUES('$pn', '$an', '$ap', '$p_a', '$a_e', '$p_s', '$p_c', '$hos', '$p_b')";
+$sql = "INSERT INTO plasma_req VALUES('$d', '$pn', '$an', '$ap', '$p_a', '$a_e', '$p_s', '$p_c', '$hos', '$p_b')";
 
 $sql1 = "SELECT * FROM plasma_req WHERE a_phone='$ap' AND p_name='$pn'";
 $res = mysqli_query($con,$sql1);
